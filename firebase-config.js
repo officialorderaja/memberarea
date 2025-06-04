@@ -3,7 +3,7 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-aut
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
   const firebaseConfig = {
-    apiKey: "AIzaSyDp-srDmna3g34MXaR200ZsW7XOG7FwGrc",
+    apiKey: "AIzaSyDPX0rBptSUNLxWhDBs0cLouWw6HGLRzm4",
     authDomain: "memberorderaja.firebaseapp.com",
     projectId: "memberorderaja",
     storageBucket: "memberorderaja.firebasestorage.app",
