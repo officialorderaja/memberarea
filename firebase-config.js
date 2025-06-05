@@ -1,5 +1,3 @@
-<script type="module">
-  // https://github.com/officialorderaja/memberarea/blob/main/firebase-config.js
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -8,18 +6,15 @@ const firebaseConfig = {
   apiKey: "AIzaSyCTlWSmjHPpbRrsXurzorAXKfVEdi3GFVQ",
   authDomain: "memberorderaja.firebaseapp.com",
   projectId: "memberorderaja",
-  storageBucket: "memberorderaja.firebasestorage.app",
+  storageBucket: "memberorderaja.appspot.com",
   messagingSenderId: "181500803408",
   appId: "1:181500803408:web:bcca622ac69800d3615455",
   measurementId: "G-VJ7JXKMECQ"
 };
 
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
+export const firebaseAuth = getAuth(app);
+export const firebaseDB = getFirestore(app);
 
-// Simpan ke global window supaya bisa dipakai di file lain
-window.firebaseAuth = auth;
-window.firebaseDB = db;
-
-</script>
+window.firebaseAuth = firebaseAuth;
+window.firebaseDB = firebaseDB;
