@@ -1,0 +1,8 @@
+{
+  "routes": [
+    {
+      "src": "/firebase-config.js",
+      "dest": "/firebase-config.js"
+    }
+  ]
+}
